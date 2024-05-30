@@ -147,7 +147,32 @@ https://en.bem.info/methodology/quick-start/*/
     }
     /*Sección About*/
     
-    section.about {}
+    section.about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(223, 234, 255);
+    }
+    
+    .about__container {
+        display: flex;
+        padding: 50px 50px 50px 50px;
+    }
+    
+    .about__title {
+        display: flex;
+        font-weight: bold;
+        font-size: 30px;
+        width: 300px;
+    }
+    
+    .about__paragraph {
+        display: flex;
+    }
     /*Sección Hobbies*/
     
     section.hobbies {}
@@ -200,6 +225,12 @@ Utiliza las referencias de los breakpoints @media abajo */
             flex-direction: row;
             width: 700px;
             align-items: center;
+        }
+        .about__title {
+            display: flex;
+            font-weight: bold;
+            font-size: 30px;
+            width: 500px;
         }
         /*Skills*/
         /*Hobbies*/
@@ -254,6 +285,12 @@ Utiliza las referencias de los breakpoints @media abajo */
             width: 100%;
         }
         /*Sección sobre mi*/
+        .about__title {
+            display: flex;
+            font-weight: bold;
+            font-size: 30px;
+            width: 500px;
+        }
         /*Skills*/
         /*Hobbies*/
         /*Formación Académica*/
