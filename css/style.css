@@ -173,12 +173,147 @@ https://en.bem.info/methodology/quick-start/*/
     .about__paragraph {
         display: flex;
     }
+    /*Sección Skills*/
+    
+    section.skills {
+        display: inline-flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .skills__line {
+        justify-content: center;
+        display: flex;
+        gap: 50px;
+    }
+    
+    .skills__box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 1%;
+        background-color: white;
+        border-radius: 10%;
+    }
+    
+    .skills__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10PX;
+    }
+    
+    .skills__name {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .skills__title {
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
     /*Sección Hobbies*/
     
-    section.hobbies {}
+    section.hobbies {
+        display: inline-flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .hobbies__line {
+        justify-content: center;
+        display: flex;
+        gap: 50px;
+    }
+    
+    .hobbies__box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding: 1%;
+        background-color: white;
+        border-radius: 10%;
+    }
+    
+    .hobbies__img {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10PX;
+    }
+    
+    .hobbies__name {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .hobbies__title {
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
     /* Experiencia Académica*/
     
-    section.academic {}
+    section.academic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        background-color: rgb(223, 234, 255);
+    }
+    
+    .academic__title {
+        font-weight: bold;
+        font-size: 35px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    
+    .academic__courses {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        width: 75%;
+    }
+    
+    .academic__courses__box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 6%;
+        background-color: white;
+        border-radius: 2%;
+        margin: 10px 10px 10px 10px;
+    }
+    
+    .academic__courses__box ul {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .academic__courses__item__img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+    }
+    
+    .academic__courses__item__title {
+        margin: 20px 0px 20px 0px
+    }
     /* experiencia*/
     
     section.experience {}
@@ -291,9 +426,43 @@ Utiliza las referencias de los breakpoints @media abajo */
             font-size: 30px;
             width: 500px;
         }
-        /*Skills*/
-        /*Hobbies*/
         /*Formación Académica*/
+        section.academic {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            width: 100%;
+            background-color: rgb(223, 234, 255);
+        }
+        .academic__title {
+            font-weight: bold;
+            font-size: 35px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        .academic__courses {
+            margin-bottom: 40px;
+            width: 75%;
+        }
+        .academic__courses__box {
+            padding: 6%;
+            background-color: white;
+            border-radius: 2%;
+            margin: 10px 10px 10px 10px;
+        }
+        .academic__courses__box ul {
+            align-items: center;
+            flex-direction: column;
+        }
+        .academic__courses__item__img {
+            text-align: center;
+            justify-content: center;
+            width: 70%;
+        }
+        .academic__courses__item__title {
+            margin: 20px 0px 20px 0px
+        }
         /*Experiencia Profesional*/
         /*Contacto*/
         /*Footer*/
