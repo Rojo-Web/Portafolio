@@ -470,7 +470,7 @@ https://en.bem.info/methodology/quick-start/*/
     .formcontato__form {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
     
     .formcontato__input,
@@ -504,6 +504,28 @@ https://en.bem.info/methodology/quick-start/*/
     
     .formcontato__botao:hover {
         background-color: #3e8e41;
+    }
+    
+    #nombreError {
+        color: red;
+    }
+    
+    #emailError {
+        color: red;
+    }
+    
+    #asuntoError {
+        color: red;
+    }
+    
+    #mensajeError {
+        color: red;
+    }
+    
+    .campo {
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
     }
     /*footeer*/
     
