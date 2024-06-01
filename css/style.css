@@ -423,7 +423,88 @@ https://en.bem.info/methodology/quick-start/*/
     }
     /*Contacto*/
     
-    section.formcontato {}
+    .formcontato {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .formcontato__contacto {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .formcontato--esquerda {
+        width: 30%;
+        margin-right: 20px;
+    }
+    
+    .formcontato__img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+    .formcontato__text {
+        width: 70%;
+    }
+    
+    .formcontato__title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .formcontato__subtext {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 20px;
+    }
+    
+    .formcontato__form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .formcontato__input,
+    .formcontato__textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+    
+    .formcontato__input:focus,
+    .formcontato__textarea:focus {
+        border-color: #aaa;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .formcontato__textarea {
+        height: 150px;
+        resize: vertical;
+    }
+    
+    .formcontato__botao {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    
+    .formcontato__botao:hover {
+        background-color: #3e8e41;
+    }
     /*footeer*/
     
     section.footer {}
@@ -471,10 +552,16 @@ Utiliza las referencias de los breakpoints @media abajo */
             font-size: 30px;
             width: 500px;
         }
-        /*Skills*/
-        /*Hobbies*/
-        /*Formación Académica*/
-        /*Experiencia Profesional*/
+        /*Contacto*/
+        .formcontato {
+            max-width: 600px;
+        }
+        .formcontato--esquerda {
+            width: 40%;
+        }
+        .formcontato__text {
+            width: 60%;
+        }
     }
     /*Mobile*/
     
@@ -567,7 +654,15 @@ Utiliza las referencias de los breakpoints @media abajo */
         .academic__courses__item__title {
             margin: 20px 0px 20px 0px
         }
-        /*Experiencia Profesional*/
         /*Contacto*/
+        .formcontato {
+            max-width: 400px;
+        }
+        .formcontato--esquerda {
+            width: 50%;
+        }
+        .formcontato__text {
+            width: 50%;
+        }
         /*Footer*/
     }
