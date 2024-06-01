@@ -316,7 +316,111 @@ https://en.bem.info/methodology/quick-start/*/
     }
     /* experiencia*/
     
-    section.experience {}
+    section.experience {
+        display: inline-flex;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 10%;
+    }
+    
+    .experiencie__box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 2%;
+        background-color: white;
+        border-radius: 2%;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .experience__box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 2%;
+        background-color: white;
+        border-radius: 2%;
+        margin: 10px 0px 10px 0px;
+    }
+    
+    .experience__img {
+        width: 60%;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+    
+    .experience__section__title {
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    
+    .experience__title {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .experience__text {
+        margin-bottom: 10px;
+    }
+    
+    .experience__info {
+        margin: 10px;
+    }
+    
+    .experience__info-container {
+        margin: 10px;
+    }
+    
+    .experience__repo {
+        background-color: #008CBA;
+        /* Azul */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .experience__repo:hover {
+        background-color: #005f73;
+        transform: scale(1.0);
+    }
+    
+    .experience__demo {
+        background-color: transparent;
+        /* Azul */
+        border: 2px solid #4CAF50;
+        color: rgb(0, 0, 0);
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 12px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .experience__demo:hover {
+        background-color: #4CAF50;
+        color: rgb(255, 255, 255);
+        transform: scale(1.0);
+    }
     /*Contacto*/
     
     section.formcontato {}
